@@ -10,4 +10,4 @@ var LessonSchema = new mongoose.Schema({
 
 var lessonModel = mongoose.model('Lesson', LessonSchema);
 
-module.exports = itemModel;
+module.exports = lessonModel;

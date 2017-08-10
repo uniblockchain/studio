@@ -1,8 +1,8 @@
-var m = require('m');
+var m = require('mongoose');
 
 // var connectStr = process.env.DB_HOST;
 
-var connectStr = 'mongodb://localhost/studio-0.5';
+var connectStr = 'mongodb://localhost/studio-1';
 
 console.log("testing")
 
@@ -13,9 +13,9 @@ m.connection.on('connected', function() {
 })
 
 m.connection.on('error', function() {
-	console.log('mongodb error ' + error);
+	console.log('mongodb error');
 })
 
 m.connection.on('disconnected', function() {
-	console.log('m disconnected from ' + connectStr);
+	console.log('mongo disconnected from ' + connectStr);
 })
