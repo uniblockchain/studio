@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import App from './App.js';
+import { Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 class LoginPage extends Component {
 
@@ -13,22 +14,24 @@ class LoginPage extends Component {
 
   render(){
     return(
-      <div>
+      <Container>
         <h2>Login</h2>
-        <div>
-          <form onSubmit={this.sendLoginCredentials}>
-            <div><input type="text" placeholder="username" value={this.inputValue} onChange={this.inputUpdate}/></div>
-            <div><input type="password" placeholder="password"/></div>
-            <div><button type="submit">Submit</button></div>
-          </form>
-        </div>
-      </div>
+      <Form>
+        <FormGroup>
+          <div><Label for="loginEmail">Email</Label></div>
+          <div><Input type="email" name="email"/></div>
+          <div><Label for="loginPassword">Password</Label></div>
+          <div><Input type="text" name="instrument"  /></div>
+        </FormGroup>
+        <div><button type="submit">Submit</button></div>
+      </Form>
+      </Container>
     )
 
     // inputUpdate = (e) => {
     //
     // }
-    // 
+    //
     // sendLoginCredentials = (e) => {
     //   e.preventDefault();
     //   this. =

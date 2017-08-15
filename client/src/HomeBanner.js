@@ -5,7 +5,7 @@ class HomeBanner extends Component {
 
   return (
     <img src='http://www.publicdomainpictures.net/pictures/160000/velka/music-score-notes.jpg'
-      style={{height: '500px', width: '100%'}} />
+      style={{maxHeight: '500px', width: '100%'}} />
   )
   }
 

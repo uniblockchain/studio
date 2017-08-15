@@ -7,29 +7,30 @@ import Home from './Home';
 import HomeBanner from './HomeBanner';
 import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
-
+import Links from './Links';
+import Routes from './Routes';
+import { Container, Col, Row } from 'reactstrap';
 
 class Navigation extends Component {
   render(){
 
   return(
-    <Router>
-      <div>
+    <Container>
+      <Router>
         <div>
-          <div style={{display: 'flex'}}>
-            <div style={{margin: '1em'}}><Link to="/HomeBanner">Studio</Link></div>
-            <div style={{margin: '1em'}}><Link to="/Login">Login</Link></div>
-            <div style={{margin: '1em'}}><Link to="/Register">Register</Link></div>
-          </div>
+          <Links />
+          <hr/>
+          <Routes>
+            <RegisterPage onSubmitDo={this.postUser}/>
+          </Routes>
         </div>
-        <hr/>
-        <Route path="/Login" component={LoginPage}/>
-        <Route path="/Register" component={RegisterPage}/>
-        <Route path="/" component={Home}/>
-        <Route path="/HomeBanner" component={HomeBanner}/>
-      </div>
-    </Router>
+      </Router>
+    </Container>
   )}
+
+  // postUser = () => {
+  //   let newUser =
+  // }
 
 }
 
