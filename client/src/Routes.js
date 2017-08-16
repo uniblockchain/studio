@@ -14,23 +14,29 @@ import StudentDashboard from './pages/StudentDashboard';
 import TeacherProfile from './components/TeacherProfile';
 import TeachersRoster from './components/TeachersRoster';
 import TeacherDashboard from './pages/TeacherDashboard';
+import ContactForm from './components/ContactForm';
+import Calendar from './components/Calendar';
+import LessonPlanner from './components/LessonPlanner';
 
 class Routes extends React.Component {
 
   render(){
     return(
       <div>
+        <Route path="/LessonPlanner" component={LessonPlanner}/>
         <Route path="/Dashboard" component={Dashboard}/>
         <Route path="/Login" component={LoginPage}/>
         <Route path="/Register" component={RegisterPage}/>
         <Route path="/" component={Home}/>
         <Route path="/HomeBanner" component={HomeBanner}/>
+        <Route path="/Calendar" component={Calendar}/>
         <Route path="/StudentPortfolio" component={StudentPortfolio}/>
-        <Route path="/StudentsRoster" component={StudentsRoster}/>
+        <Route path="/Students" component={StudentsRoster}/>
         <Route path="/StudentDashboard" component={StudentDashboard}/>
         <Route path="/TeacherProfile" component={TeacherProfile}/>
         <Route path="/TeachersRoster" component={TeachersRoster}/>
         <Route path="/TeacherDashboard" component={TeacherDashboard}/>
+        <Route path="/ContactForm" component={ContactForm}/>
       </div>
     )
   }

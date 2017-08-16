@@ -3,9 +3,22 @@ import { ListGroup, ListGroupItem, Form, Button, InputGroup, InputGroupAddon, In
 
 export default class LessonPlanner extends React.Component {
 
+  constructor(props){
+    super(props)
+    this.state = {
+      data: [],
+      inputValue: ""
+    }
+  }
+
+  addLesson = (e) => {
+    e.preventDefault()
+    let lesson = this.state.inputValue;
+  }
+
   render(){
     return(
-      <Form>
+      <Form onSubmit={this.addLesson}>
       <InputGroup>
         <InputGroupAddon>Introduction</InputGroupAddon>
         <Input />
