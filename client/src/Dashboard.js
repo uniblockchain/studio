@@ -9,7 +9,7 @@ import {
   BrowserRouter as Router,
   Route,
   Link } from 'react-router-dom';
-import StudentPortfolio from './StudentPortfolio';
+import StudentPortfolio from './components/StudentPortfolio';
 
 
 
@@ -30,6 +30,7 @@ class Dashboard extends React.Component {
               <Link to='/TeachersRoster'><Button>Teachers Roster</Button></Link>
               <Link to='/Calendar'><Button>Calendar</Button></Link>
             </ButtonGroup>
+            <hr/>
           </Col>
           <Col/>
         </Row>

@@ -5,13 +5,13 @@ import {
   Link } from 'react-router-dom';
 import Home from './Home';
 import HomeBanner from './HomeBanner';
-import LoginPage from './LoginPage';
-import RegisterPage from './RegisterPage';
+import LoginPage from './components/LoginPage';
+import RegisterPage from './components/RegisterPage';
 import Dashboard from './Dashboard';
-import StudentPortfolio from './StudentPortfolio';
-import StudentsRoster from './StudentsRoster';
-import TeacherProfile from './TeacherProfile';
-import TeachersRoster from './TeachersRoster';
+import StudentPortfolio from './components/StudentPortfolio';
+import StudentsRoster from './components/StudentsRoster';
+import TeacherProfile from './components/TeacherProfile';
+import TeachersRoster from './components/TeachersRoster';
 
 class Routes extends React.Component {
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import Dashboard from './Dashboard';
+import Dashboard from '../Dashboard';
 
-class TeachersRoster extends React.Component {
+class TeacherProfile extends React.Component {
   constructor(){
     super()
   }
@@ -16,4 +16,4 @@ class TeachersRoster extends React.Component {
     )
   }
 }
-export default TeachersRoster;
+export default TeacherProfile;

@@ -3,10 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Link } from 'react-router-dom';
-import Home from './Home';
-import HomeBanner from './HomeBanner';
-import LoginPage from './LoginPage';
-import RegisterPage from './RegisterPage';
+import RegisterPage from './components/RegisterPage';
 import Links from './Links';
 import Routes from './Routes';
 import { Container, Col, Row } from 'reactstrap';
