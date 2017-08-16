@@ -5,13 +5,15 @@ import {
   Link } from 'react-router-dom';
 import Home from './Home';
 import HomeBanner from './HomeBanner';
-import LoginPage from './components/LoginPage';
-import RegisterPage from './components/RegisterPage';
-import Dashboard from './Dashboard';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import Dashboard from './pages/Dashboard';
 import StudentPortfolio from './components/StudentPortfolio';
 import StudentsRoster from './components/StudentsRoster';
+import StudentDashboard from './pages/StudentDashboard';
 import TeacherProfile from './components/TeacherProfile';
 import TeachersRoster from './components/TeachersRoster';
+import TeacherDashboard from './pages/TeacherDashboard';
 
 class Routes extends React.Component {
 
@@ -25,8 +27,10 @@ class Routes extends React.Component {
         <Route path="/HomeBanner" component={HomeBanner}/>
         <Route path="/StudentPortfolio" component={StudentPortfolio}/>
         <Route path="/StudentsRoster" component={StudentsRoster}/>
+        <Route path="/StudentDashboard" component={StudentDashboard}/>
         <Route path="/TeacherProfile" component={TeacherProfile}/>
         <Route path="/TeachersRoster" component={TeachersRoster}/>
+        <Route path="/TeacherDashboard" component={TeacherDashboard}/>
       </div>
     )
   }

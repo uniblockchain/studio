@@ -5,8 +5,8 @@ import {
   Link } from 'react-router-dom';
 import Home from './Home';
 import HomeBanner from './HomeBanner';
-import LoginPage from './components/LoginPage';
-import RegisterPage from './components/RegisterPage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 
 

@@ -5,7 +5,7 @@ import {
   Container,
   Row,
   Col } from 'reactstrap';
-import Dashboard from '../Dashboard';
+import Dashboard from '../pages/Dashboard';
 
 class StudentPortfolio extends React.Component {
   constructor(){

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import Dashboard from '../Dashboard';
+import Dashboard from '../pages/Dashboard';
 
 class TeacherProfile extends React.Component {
   constructor(){

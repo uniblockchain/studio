@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Link } from 'react-router-dom';
-import RegisterPage from './components/RegisterPage';
+import RegisterPage from './pages/RegisterPage';
 import Links from './Links';
 import Routes from './Routes';
 import { Container, Col, Row } from 'reactstrap';

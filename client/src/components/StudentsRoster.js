@@ -7,7 +7,7 @@ import {
   ListGroupItem,
   ListGroup,
   Container } from 'reactstrap';
-import Dashboard from '../Dashboard';
+import Dashboard from '../pages/Dashboard';
 import StudentListItem from './StudentListItem';
 import axios from 'axios';
 
