@@ -1,70 +1,67 @@
 import React from 'react';
-import { FormGroup, ListGroup, Form, Button, InputGroup, InputGroupAddon, Input } from 'reactstrap';
+import { FormGroup, ListGroup, Form, Button, Label, Input } from 'reactstrap';
 
 export default class LessonPlanner extends React.Component {
 
   constructor(props){
     super(props)
     this.state = {
-      data: [],
-      inputValue: ""
-    }
+      introduction: "",
+      warmup: "",
+      study: "",
+      repertoire: "",
+      conclusion: ""
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  addLesson = (e) => {
-    e.preventDefault()
-    let lesson = this.state.inputValue;
-    this.props.onLessonSubmit(lesson);
 
+
+  handleChange(event) {
+    this.setState({introduction: event.target.value});
   }
 
-    /* form-control height should be 48px */
+  handleSubmit(event){
+    console.log('introduction was submitted: ' + this.state.introduction);
+    console.log('warmup was submitted: ' + this.state.warmup);
+    console.log('study was submitted: ' + this.state.study);
+    console.log('repertoire was submitted: ' + this.state.repertoire);
+    console.log('conclusion was submitted: ' + this.state.conclusion);
+    event.preventDefault();
+  }
 
   render(){
     return(
-      <Form onSubmit={this.addLesson}>
+      <Form onSubmit={this.handleSubmit}>
       <FormGroup>
-        <InputGroup>
-          <InputGroupAddon>Introduction</InputGroupAddon>
-          <Input />
-          <InputGroupAddon><Button>Add</Button></InputGroupAddon>
-        </InputGroup>
+          <Label>Introduction</Label>
+          <Input type="text" value={this.state.introduction} onChange={this.handleChange} /><br/>
       </FormGroup>
       <hr/>
       <FormGroup>
-        <InputGroup>
-          <InputGroupAddon>Warm-up</InputGroupAddon>
-          <Input />
-          <InputGroupAddon><Button>Add</Button></InputGroupAddon>
-        </InputGroup>
+          <Label>Warm-up</Label>
+          <Input type="text" value={this.state.warmup} onChange={this.handleChange} /><br/>
       </FormGroup>
       <hr/>
       <ListGroup>
       </ListGroup>
       <FormGroup>
-        <InputGroup>
-          <InputGroupAddon>Study</InputGroupAddon>
-          <Input />
-          <InputGroupAddon><Button>Add</Button></InputGroupAddon>
-        </InputGroup>
+          <Label>Study</Label>
+          <Input type="text" value={this.state.study} onChange={this.handleChange} /><br/>
       </FormGroup>
       <hr/>
       <ListGroup>
       </ListGroup>
       <FormGroup>
-        <InputGroup>
-          <InputGroupAddon>Repertoire</InputGroupAddon>
-          <Input />
-          <InputGroupAddon><Button>Add</Button></InputGroupAddon>
-        </InputGroup>
+          <Label>Repertoire</Label>
+          <Input type="text" value={this.state.repertoire} onChange={this.handleChange} /><br/>
       </FormGroup>
       <hr/>
       <FormGroup>
-        <InputGroup>
-        <InputGroupAddon>Conclusion</InputGroupAddon>
-        <Input />
-        <InputGroupAddon><Button>Add</Button></InputGroupAddon>
-        </InputGroup>
+        <Label>Conclusion</Label>
+        <Input type="text" value={this.state.conclusion} onChange={this.handleChange} /><br/>
       </FormGroup>
       <hr/>
       <ListGroup>
@@ -75,4 +72,6 @@ export default class LessonPlanner extends React.Component {
       </Form>
     )
   }
+
+
 }

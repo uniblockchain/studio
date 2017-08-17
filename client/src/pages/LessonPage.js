@@ -12,13 +12,15 @@ export default class LessonPage extends React.Component{
 
   render(){
     return(
-      <LessonPlanner onLessonSubmit={this.createLesson} />
-      
+      <LessonPlanner/>
+
     )
   }
 
   createLesson = (lesson) => {
+    console.log('reached create')
     this.state.data.push(lesson);
+    console.log(this.state)
   }
 
 }
