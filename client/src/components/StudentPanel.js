@@ -1,13 +1,9 @@
 import React from 'react';
 import {
-  Col,
   Container,
   Button,
   ButtonGroup } from 'reactstrap';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export default class StudentPanel extends React.Component {

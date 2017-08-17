@@ -7,8 +7,6 @@ class Home extends Component {
 
   return (
     <div>
-      {/* <Calendar /> */}
-      {/* <LessonPlanner /> */}
     </div>
   )
   }

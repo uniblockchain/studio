@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import App from '../App.js';
-import { Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Container, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class LoginPage extends Component {
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import App from '../App.js';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 
 class RegisterPage extends Component {
 

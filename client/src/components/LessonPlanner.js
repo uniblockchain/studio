@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormGroup, ListGroup, ListGroupItem, Form, Button, InputGroup, InputGroupAddon, Input } from 'reactstrap';
+import { FormGroup, ListGroup, Form, Button, InputGroup, InputGroupAddon, Input } from 'reactstrap';
 
 export default class LessonPlanner extends React.Component {
 
@@ -15,8 +15,6 @@ export default class LessonPlanner extends React.Component {
     e.preventDefault()
     let lesson = this.state.inputValue;
     this.props.onLessonSubmit(lesson);
-
-    
 
   }
 

@@ -2,15 +2,10 @@ import React from 'react';
 import {
   ListGroupItem,
   ListGroup,
-  Container,
-  Row,
-  Col } from 'reactstrap';
+  Container } from 'reactstrap';
 import Dashboard from '../pages/Dashboard';
 
 class StudentPortfolio extends React.Component {
-  constructor(){
-    super()
-  }
 
   render(){
     return(

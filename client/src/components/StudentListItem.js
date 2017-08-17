@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  ListGroup,
   ListGroupItem,
   Container} from 'reactstrap';
 

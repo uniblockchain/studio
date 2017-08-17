@@ -1,12 +1,6 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link } from 'react-router-dom';
-import {
-  ListGroupItem,
-  ListGroup,
-  Container } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { ListGroup } from 'reactstrap';
 import Dashboard from '../pages/Dashboard';
 import StudentListItem from './StudentListItem';
 import axios from 'axios';

@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
-  Route,
-  Link } from 'react-router-dom';
+  BrowserRouter as Router } from 'react-router-dom';
 import RegisterPage from './pages/RegisterPage';
 import Links from './Links';
 import Routes from './Routes';
-import { Container, Col, Row } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 class Navigation extends Component {
   render(){

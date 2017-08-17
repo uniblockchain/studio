@@ -1,8 +1,5 @@
-import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link } from 'react-router-dom';
+import React from 'react';
+import { Route } from 'react-router-dom';
 import Home from './Home';
 import HomeBanner from './HomeBanner';
 import LoginPage from './pages/LoginPage';
@@ -18,6 +15,7 @@ import ContactForm from './components/ContactForm';
 import Calendar from './components/Calendar';
 // import LessonPlanner from './components/LessonPlanner';
 import LessonPage from './pages/LessonPage';
+import LandingPage from './pages/LandingPage';
 
 class Routes extends React.Component {
 
@@ -39,6 +37,7 @@ class Routes extends React.Component {
         <Route path="/TeacherDashboard" component={TeacherDashboard}/>
         <Route path="/ContactForm" component={ContactForm}/>
         <Route path="/LessonPage" component={LessonPage}/>
+        <Route path="/LandingPage" component={LandingPage}/>
       </div>
     )
   }

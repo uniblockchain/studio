@@ -1,13 +1,5 @@
-import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link } from 'react-router-dom';
-import Home from './Home';
-import HomeBanner from './HomeBanner';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 class Links extends React.Component {
@@ -16,9 +8,7 @@ class Links extends React.Component {
     return(
       <div>
         <div style={{display: 'flex'}}>
-          <div style={{margin: '1em'}}><Link to="/HomeBanner">Studio</Link></div>
-          <div style={{margin: '1em'}}><Link to="/Login">Login</Link></div>
-          <div style={{margin: '1em'}}><Link to="/Register">Register</Link></div>
+          <div style={{margin: '1em'}}><Link to="/LandingPage">Studio</Link></div>
           <div style={{margin: '1em'}}><Link to="/Dashboard">Dashboard</Link></div>
         </div>
       </div>
