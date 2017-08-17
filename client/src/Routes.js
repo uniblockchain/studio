@@ -16,14 +16,15 @@ import TeachersRoster from './components/TeachersRoster';
 import TeacherDashboard from './pages/TeacherDashboard';
 import ContactForm from './components/ContactForm';
 import Calendar from './components/Calendar';
-import LessonPlanner from './components/LessonPlanner';
+// import LessonPlanner from './components/LessonPlanner';
+import LessonPage from './pages/LessonPage';
 
 class Routes extends React.Component {
 
   render(){
     return(
       <div>
-        <Route path="/LessonPlanner" component={LessonPlanner}/>
+        {/* <Route path="/LessonPlanner" component={LessonPlanner}/> */}
         <Route path="/Dashboard" component={Dashboard}/>
         <Route path="/Login" component={LoginPage}/>
         <Route path="/Register" component={RegisterPage}/>
@@ -37,6 +38,7 @@ class Routes extends React.Component {
         <Route path="/TeachersRoster" component={TeachersRoster}/>
         <Route path="/TeacherDashboard" component={TeacherDashboard}/>
         <Route path="/ContactForm" component={ContactForm}/>
+        <Route path="/LessonPage" component={LessonPage}/>
       </div>
     )
   }
