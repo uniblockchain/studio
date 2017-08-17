@@ -12,8 +12,8 @@ class Dashboard extends React.Component {
   render(){
     return(
       <ButtonGroup>
-        <Link style={{margin: "25px"}} to='/TeacherDashboard'><Button>Teacher Dashboard</Button></Link>
-        <Link to='/StudentDashboard'><Button>Student Dashboard</Button></Link>
+        <Link style={{margin: "25px"}} to='/LessonPlanner'><Button>Lesson Planner</Button></Link>
+        <Link to='/LessonPlans'><Button>Lesson Plans</Button></Link>
         <hr/>
       </ButtonGroup>
     )

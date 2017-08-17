@@ -13,8 +13,8 @@ import TeachersRoster from './components/TeachersRoster';
 import TeacherDashboard from './pages/TeacherDashboard';
 import ContactForm from './components/ContactForm';
 import Calendar from './components/Calendar';
-// import LessonPlanner from './components/LessonPlanner';
-import LessonPage from './pages/LessonPage';
+import LessonPlanner from './components/LessonPlanner';
+import LessonPlans from './components/LessonPlans';
 import LandingPage from './pages/LandingPage';
 
 class Routes extends React.Component {
@@ -36,8 +36,8 @@ class Routes extends React.Component {
         <Route path="/TeachersRoster" component={TeachersRoster}/>
         <Route path="/TeacherDashboard" component={TeacherDashboard}/>
         <Route path="/ContactForm" component={ContactForm}/>
-        <Route path="/LessonPage" component={LessonPage}/>
         <Route path="/LandingPage" component={LandingPage}/>
+        <Route path="/LessonPlans" component={LessonPlans}/>
       </div>
     )
   }
