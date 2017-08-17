@@ -44,7 +44,7 @@ export default class WarmupForm extends React.Component {
 
   updateWarmup(e) {
     let updatedState = this.state;
-    updatedState.inputValue = e.target.value;
+    updatedState.warmup = e.target.value;
     this.setState(updatedState);
   }
 }
