@@ -14,32 +14,8 @@ export default class WarmupForm extends React.Component {
       warmup: ""
     };
 
-    this.handleChange = this.handleChange.bind(this);
+    this.updateWarmup = this.updateWarmup.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    let updatedState = this.state;
-    updatedState.inputValue = event.target.value;
-    this.setState(updatedState);
-  }
-
-  handleSubmit(event){
-    event.preventDefault();
-
-    let warmup = this.state.warmup;
-    console.log('01 warmup: ' + this.state.warmup);
-
-    this.props.onWarmupSubmit(warmup);
-
-    let updatedState = this.state;
-    updatedState.warmup = "";
-    this.setState(updatedState);
-    console.log(this.state);
-  }
-
-  onWarmupSubmit(warmup){
-
   }
 
   render(){
@@ -48,11 +24,27 @@ export default class WarmupForm extends React.Component {
 
       <FormGroup>
           <Label>Warm-up</Label>
-          <Input type="text" value={this.state.warmup} onChange={this.handleChange} /><br/>
+          <Input type="text" value={this.state.warmup} onChange={this.updateWarmup} /><br/>
       </FormGroup>
       <Button>Submit Warm-up</Button>
 
       </Form>
     )
+  }
+
+  handleSubmit(e){
+    e.preventDefault();
+    let item = this.state.warmup;
+    this.props.onWarmupSubmit(item);
+
+    let updatedState = this.state;
+    updatedState.warmup = "";
+    this.setState(updatedState);
+  }
+
+  updateWarmup(e) {
+    let updatedState = this.state;
+    updatedState.inputValue = e.target.value;
+    this.setState(updatedState);
   }
 }
