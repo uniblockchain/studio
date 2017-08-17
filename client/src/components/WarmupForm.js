@@ -19,14 +19,17 @@ export default class WarmupForm extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({warmup: event.target.value});
+    let updatedState = this.state;
+    updatedState.inputValue = event.target.value;
+    this.setState(updatedState);
   }
 
   handleSubmit(event){
-    console.log('warmup: ' + this.state.warmup);
     event.preventDefault();
 
     let warmup = this.state.warmup;
+    console.log('01 warmup: ' + this.state.warmup);
+
     this.props.onWarmupSubmit(warmup);
 
     let updatedState = this.state;
@@ -36,7 +39,7 @@ export default class WarmupForm extends React.Component {
   }
 
   onWarmupSubmit(warmup){
-    
+
   }
 
   render(){

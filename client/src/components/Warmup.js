@@ -5,7 +5,7 @@ export default class Warmup extends Component {
   render(){
     return(
       <li>
-        <span>{this.props.data}</span>
+        <span>{this.props.item}</span>
       </li>
     )
   }
