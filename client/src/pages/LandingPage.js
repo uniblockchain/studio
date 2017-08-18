@@ -12,7 +12,7 @@ export default class LandingPage extends React.Component {
       <Container>
         <Row>
           <Link style={{margin: "25px"}} to="/Login">Login</Link>
-          <Link to="/Register">Register</Link>
+          <Link style={{margin: "25px"}} to="/Register">Register</Link>
         </Row>
         <HomeBanner />
       </Container>

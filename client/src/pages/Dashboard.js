@@ -13,8 +13,7 @@ class Dashboard extends React.Component {
 
   render(){
     return(
-      <Navbar>
-        <NavbarBrand>Studio</NavbarBrand>
+      
 
       <ButtonGroup>
         <Link style={{margin: "25px"}} to='/LessonPlans'><Button>Lesson Planner</Button></Link>
