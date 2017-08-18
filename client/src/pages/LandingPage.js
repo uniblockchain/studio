@@ -10,6 +10,7 @@ export default class LandingPage extends React.Component {
   render(){
     return(
       <Container>
+        <div></div>
         <Row>
           <Link style={{margin: "25px"}} to="/Login">Login</Link>
           <Link style={{margin: "25px"}} to="/Register">Register</Link>
