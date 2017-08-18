@@ -15,7 +15,7 @@ class StudentsRoster extends React.Component {
   }
 
   componentWillMount(){
-    axios.get("http://www.mocky.io/v2/59945c581100002d0272307a").then((response) => {
+    axios.get("http://www.mocky.io/v2/599644e9110000780ccc441c").then((response) => {
       let updatedState = this.state;
       updatedState.data = response.data;
       this.setState(updatedState)
@@ -29,7 +29,7 @@ class StudentsRoster extends React.Component {
         <ListGroup>
           {this.state.data.map((student, index) => {
             return(
-              <Link to={'/StudentPortfolio/' + (index + 1)}><StudentListItem name={student.name} key={index}/></Link>
+              <Link onClick={this.getStudent} to={'/StudentPortfolio/' + (index + 1)}><StudentListItem name={student.name} key={index}/></Link>
             )
           })}
         </ListGroup>

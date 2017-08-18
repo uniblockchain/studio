@@ -30,7 +30,7 @@ class Routes extends React.Component {
         <Route path="/HomeBanner" component={HomeBanner}/>
         <Route path="/Calendar" component={Calendar}/>
         <Route path="/StudentPortfolio" component={StudentPortfolio}/>
-        <Route path="/Students" component={StudentsRoster}/>
+        <Route path="/StudentsRoster" component={StudentsRoster}/>
         <Route path="/StudentDashboard" component={StudentDashboard}/>
         <Route path="/TeacherProfile" component={TeacherProfile}/>
         <Route path="/TeachersRoster" component={TeachersRoster}/>

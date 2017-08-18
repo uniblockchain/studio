@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   ListGroupItem,
-  Container} from 'reactstrap';
+  Container } from 'reactstrap';
 
 class StudentListItem extends React.Component {
   render(){

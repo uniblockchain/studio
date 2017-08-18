@@ -5,6 +5,7 @@ import StudyForm from './StudyForm';
 import Study from './Study';
 import RepertoireForm from './RepertoireForm';
 import Repertoire from './Repertoire';
+import Dashboard from '../pages/Dashboard'
 
 export default class LessonPlans extends React.Component {
   constructor(){
@@ -28,6 +29,7 @@ export default class LessonPlans extends React.Component {
 
     return(
       <div>
+        <Dashboard/>
         <WarmupForm onWarmupSubmit={this.createWarmup}/>
           <ul>
             {this.state.data.map((activity, index) => {
