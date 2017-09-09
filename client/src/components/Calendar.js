@@ -16,14 +16,14 @@ export default class Calendar extends React.Component {
 
   render(){
     return(
-      <Container>
-      <Dashboard/>
-      <BigCalendar
-        {...this.props}
-        events={events}
-        views={allViews}
-        defaultDate={new Date(2017, 7, 18)}/>
-      </Container>
+      <div>
+        <Dashboard/>
+        <BigCalendar
+          {...this.props}
+          events={events}
+          views={allViews}
+          defaultDate={new Date(2017, 7, 18)}/>
+      </div>
     )
   }
 }

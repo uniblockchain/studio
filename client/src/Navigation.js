@@ -7,6 +7,10 @@ import Routes from './Routes';
 import { Container } from 'reactstrap';
 
 class Navigation extends Component {
+  constructor(props){
+    super(props)
+
+  }
   render(){
 
   return(
@@ -15,17 +19,11 @@ class Navigation extends Component {
         <div>
           <Links />
           <hr/>
-          <Routes>
-            <RegisterPage onSubmitDo={this.postUser}/>
-          </Routes>
+          <Routes />
         </div>
       </Router>
     </Container>
   )}
-
-  // postUser = () => {
-  //   let newUser =
-  // }
 
 }
 

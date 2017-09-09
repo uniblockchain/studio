@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  color: salmon;
 }
 /*.page {
   background: url('http://www.michaeloysterpianostudio.com/wp-content/uploads/2015/10/piano_1100px.jpg') no-repeat center fixed;

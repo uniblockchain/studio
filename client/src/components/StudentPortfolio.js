@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  ListGroupItem,
   ListGroup,
   Container } from 'reactstrap';
 import Dashboard from '../pages/Dashboard';
